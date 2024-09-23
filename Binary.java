@@ -4,7 +4,7 @@ class Binary{
     public static void main(String[] args) {
         int[] nums = {1,22,33,44,55,66,77,88,99,100,102};
         int target = 55;
-        System.out.println();
+        System.out.println(Search(nums, target));
     }
 
     static int Search (int[] nums, int target){
