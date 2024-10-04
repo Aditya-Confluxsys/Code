@@ -18,9 +18,9 @@ class Binary{
         while (start<=end) {
             int mid = start + (end-start) / 2;
             if(target<nums[mid]){
-                mid = end - 1;
+                end = mid - 1;
             } else if(target>nums[mid]){
-                mid = start + 1; 
+                start = mid + 1; 
             } else{
                 return mid;
             }
@@ -34,9 +34,9 @@ class Binary{
         while (start<=end) {
             int mid = start + (end-start) / 2;
             if(target1<nums1[mid]){
-                mid = start + 1;
+                start = mid + 1;
             } else if(target1>nums1[mid]){
-                mid = end - 1; 
+                end = mid - 1; 
             } else{
                 return mid;
             }
